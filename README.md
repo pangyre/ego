@@ -1,1 +1,1 @@
-# This is my README
+http://uwsgi-docs.readthedocs.org/en/latest/PSGIquickstart.html
