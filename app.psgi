@@ -10,7 +10,7 @@ my $self = path(__FILE__);
 
 my $app = sub {
     [ 200, [ "Content-Type" => "text/plain" ],
-      [ "OHAI\n" ] ];
+      [ "OHAI ", uc(qx{whoami}), $/ ] ];
 };
 
 builder {
