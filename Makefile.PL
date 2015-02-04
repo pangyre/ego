@@ -11,5 +11,7 @@ WriteAll;
 
 __END__
 
+ carton exec perl Makefile.PL
+
  rm -f META.yml ; perl Makefile.PL
 
