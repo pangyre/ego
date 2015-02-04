@@ -12,7 +12,7 @@ DOCS ARE ENTIRELY UP THE AIR ON THIS BRANCH AND REPRESENT NOTHING RELIABLE.
 
 =begin html
 
-<img src="https://travis-ci.org/pangyre/ego.svg?branch=master" />
+<img src="https://travis-ci.org/pangyre/ego.svg?branch=master" style="margin:1ex auto" alt="Travis CI Build Status" />
 
 =end html
 
