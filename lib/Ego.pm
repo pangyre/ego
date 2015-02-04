@@ -26,6 +26,12 @@ Ego - B<Experimental> lightweight web framework.
 
 DOCS ARE ENTIRELY UP THE AIR ON THIS BRANCH AND REPRESENT NOTHING RELIABLE.
 
+=begin html
+
+<img src="https://travis-ci.org/pangyre/ego.svg?branch=master" />
+
+=end html
+
 =head1 Author
 
 Ashley Pond V E<middot> ashley@cpan.org.
