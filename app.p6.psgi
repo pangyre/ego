@@ -3,11 +3,10 @@ use v6;
 use lib "lib";
 
 
-=begin notes
-
 # Have an HTTP::Response type
 # Extend it to Get, Post, Put, Delete...
-use HTTP::UserAgent;
+use HTTP::Request;
+# use HTTP::UserAgent;
 
 subset Get of HTTP::Request where -> $r { $r.method eqv "GET" };
 
@@ -23,25 +22,12 @@ class Ego {
     };
 };
 
+
+
 sub run (%env) {
-    # my $ego = Ego.new(env => %env);
-    use HTTP::Request;
-    say %env<REQUEST_METHOD>, " ", %env<REQUEST_URI>;
-    my $method = %env<REQUEST_METHOD>;
-    say %env<REQUEST_METHOD>.WHICH;
-    my $req = HTTP::Request.new;
-    $req.method = %env<REQUEST_METHOD>;
-    $req.url = %env<REQUEST_URI>;
-
-    # my $req = HTTP::Request.new( %env{"REQUEST_METHOD","REQUEST_URI"} );
-    # my $req = HTTP::Request.new( %env<REQUEST_METHOD REQUEST_URI> );
-    # my $req = HTTP::Request.new( %env<REQUEST_METHOD> => "/" );
-    #my $req = HTTP::Request.new( %env<REQUEST_METHOD> => %env<REQUEST_URI> );
-    #my $req = HTTP::Request.new( GET => "/" );
-
+    # http://stackoverflow.com/questions/28313716/why-am-i-getting-too-many-positionals-passed-in-this-call-to-httprequest-ne
+    my $req = HTTP::Request.new(|{ %env<REQUEST_METHOD> => %env<REQUEST_URI> });
     $req.print;
-#    say $ego.env.
-
 
     # Setup
     # Accept request...
@@ -77,4 +63,3 @@ Questions:
 
 =end comment
 
-=end notes
