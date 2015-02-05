@@ -3,8 +3,8 @@
    "author" : [
       "unknown"
    ],
-   "dynamic_config" : "0",
-   "generated_by" : "Module::Install version 1.14, CPAN::Meta::Converter version 2.143240",
+   "dynamic_config" : 0,
+   "generated_by" : "Module::Install version 1.14, CPAN::Meta::Converter version 2.140640, CPAN::Meta::Converter version 2.143240",
    "license" : [
       "unknown"
    ],
@@ -22,13 +22,13 @@
    "prereqs" : {
       "build" : {
          "requires" : {
+            "CPAN::Meta" : "0",
             "ExtUtils::MakeMaker" : "6.59"
          }
       },
       "configure" : {
          "requires" : {
-            "CPAN::Meta" : "0",
-            "ExtUtils::MakeMaker" : "6.59"
+            "ExtUtils::MakeMaker" : "0"
          }
       },
       "runtime" : {
@@ -39,7 +39,7 @@
             "Module::CPANfile" : "0",
             "Path::Tiny" : "0",
             "Plack" : "0.9",
-            "perl" : "v5.16.2"
+            "perl" : "5.016002"
          }
       }
    },
