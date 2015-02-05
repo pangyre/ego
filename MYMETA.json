@@ -4,7 +4,7 @@
       "unknown"
    ],
    "dynamic_config" : 0,
-   "generated_by" : "Module::Install version 1.14, CPAN::Meta::Converter version 2.140640, CPAN::Meta::Converter version 2.143240",
+   "generated_by" : "Module::Install version 1.14, CPAN::Meta::Converter version 2.143240",
    "license" : [
       "unknown"
    ],
@@ -39,6 +39,7 @@
             "Module::CPANfile" : "0",
             "Path::Tiny" : "0",
             "Plack" : "0.9",
+            "Plack::Test::Simple" : "0",
             "perl" : "5.016002"
          }
       }

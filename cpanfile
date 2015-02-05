@@ -3,3 +3,4 @@ requires "Lucy" => "0.3.3";
 requires "Path::Tiny";
 requires "DBIx::Class";
 requires "DBD::SQLite";
+requires "Plack::Test::Simple";
