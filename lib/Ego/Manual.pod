@@ -8,7 +8,7 @@ Ego - B<Experimental> lightweight web framework.
 
 =head1 Synopsis
 
-DOCS ARE ENTIRELY UP THE AIR ON THIS BRANCH AND REPRESENT NOTHING RELIABLE.
+...Nothing reliable yet...
 
 =begin html
 
@@ -16,7 +16,57 @@ DOCS ARE ENTIRELY UP THE AIR ON THIS BRANCH AND REPRESENT NOTHING RELIABLE.
   <img src="https://travis-ci.org/pangyre/ego.svg?branch=master" style="margin:1ex auto" alt="Travis CI Build Status" />
 </p>
 
+<p>Needs a reationship REST format...? Maybe not? Small combined ops do the same.</p>
+
+<p>Missing ideas... Copyright types. Check the Yesh Code, it has it.
+It should be its own tag probably. Then we need tag permissions. Could
+be good... Except license is sticky in a sense... Need to have a
+history log or a diff table or whatever.</p>
+
+<h2>URI map</h2>
+
+<ul style="whitespace:pre-wrap">
+
+/u
+  User - GET/POST
+
+/u/{id}
+  User - GET/PUT
+
+/p
+  Post
+
+/x
+  Static resources
+
+/{xyz}
+  Scheduled page/conglomerate
+
+/3
+  Third party
+
+/t
+  Tags
+
+/-
+  Search?
+
+/_
+  Admin?
+
+/. Admin? Self tests and diagnostics? Configuration?
+
+/~ ...?
+
+
+
+</ul>
+
 =end html
+
+=head1 Code Repository
+
+L<http://github.com/pangyre/ego>.
 
 =head1 Author
 
